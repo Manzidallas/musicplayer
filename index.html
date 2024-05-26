@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music">
+            <img class="thumbnail" src="https://i.scdn.co/image/ab6761610000e5eb7952358e33599027ae3c7f37" alt="">
+            <div class="title">
+                <h1>Rema </h1>
+                <p>Calm Down (feat. Selena Gomez)</p>
+            </div>
+            <audio id="song" controls>
+                <source src="Rema Selena, Gomez  - Calm Down.mp3">
+            </audio>
+            <div class="timeline">
+                <input id="progress" type="range" value="0">
+            </div>
+            <div class="controls">
+                <span class="material-symbols-outlined"> skip_previous </span>
+                <span onclick="playpause()" id="play" class="material-symbols-outlined"></span>
+                <span class="material-symbols-outlined"> skip_next </span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
